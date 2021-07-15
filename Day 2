@@ -1,0 +1,56 @@
+
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    	//Write code here
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        if(checkInt(s))
+        {
+            System.out.println("This input is of type Integer.");
+        }
+        else if(checkFloat(s))
+        {
+            System.out.println("This input is of type Float.");
+        }
+        else if(checkString(s))
+        {
+            System.out.println("This input is of type string.");
+        }
+        else
+         System.out.println("This is something else.");
+
+   }
+  public static boolean checkInt(String s){
+      try
+      {
+          Integer x=Integer.parseInt(s);
+          return true;
+      }
+      catch(NumberFormatException e){
+          return false;
+      }
+  }
+  public static boolean checkFloat(String s){
+      try
+      {
+          Float x=Float.parseFloat(s);
+          return true;
+      }
+      catch(NumberFormatException e){
+          return false;
+      }
+  }
+  public static boolean checkString(String s)
+  {
+      if(s instanceof String)
+        return true;
+      return false;
+  }
+
+
+}
