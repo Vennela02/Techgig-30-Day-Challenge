@@ -1,0 +1,36 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+import java.lang.Math;  
+
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    	//Write code here
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=0,sum=0;
+        while(n>0)
+        {
+            n=n/10;
+            count++;
+
+        }
+        while(n>0)
+        {
+            n=n%10;
+         sum +=  (Math.pow(n,count));   
+            n=n/10;
+        }
+        if(sum==n)
+          System.out.println("True");
+        else
+          System.out.println("False");
+
+   }
+}
