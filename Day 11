@@ -1,0 +1,32 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    	//Write code here
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int count1=0,count2=0;
+        char[] cA = s.toCharArray();
+        
+        for(char chh : cA) {
+         if(chh >='A' && chh <='Z') {
+            count1++;
+         } else if (chh >= 'a' && chh <= 'z') {
+            count2++;
+         } else {
+            continue;
+         }
+      }
+
+        System.out.println(count1);
+         System.out.println(count2);
+
+   }
+}
