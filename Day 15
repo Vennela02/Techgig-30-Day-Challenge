@@ -1,0 +1,25 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public void calpow(int N,int P)
+    {  
+       
+       System.out.println((int)Math.pow(N, P)); 
+    }
+    public static void main(String args[] ) throws Exception {
+
+    	//Write code here
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int P=sc.nextInt();
+         CandidateCode c=new  CandidateCode();
+         c.calpow(N,P);
+
+   }
+}
