@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    	//Write code here
+        Scanner sc=new Scanner(System.in);
+        
+        for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print("*" + " ");
+			}
+			System.out.println();
+		}
+
+   }
+}
+
+
+****/outut/***
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
