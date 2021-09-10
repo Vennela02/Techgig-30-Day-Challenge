@@ -1,0 +1,28 @@
+/* Read input from STDIN. Print your output to STDOUT*/
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+   public static void main(String args[] ) throws Exception {
+
+	//Write code here
+   Scanner sc=new Scanner(System.in);
+   int n=sc.nextInt();
+   int temp=0,es=0,os=0;
+   while(n>0)
+   {
+       temp=n%10;
+       if(temp%2==0)
+       {
+          es+=temp;
+       }
+       else
+         os+=temp;
+      n=n/10;
+      
+   }
+   int res=Math.abs(es-os);
+   System.out.println(res);
+
+   }
+}
