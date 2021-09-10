@@ -1,0 +1,34 @@
+/* Read input from STDIN. Print your output to STDOUT*/
+
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class CandidateCode {
+   int lar = 0, r;
+
+
+    int largestDigit(int n) {
+
+        if (n > 0) {
+            r = n % 10;
+            if (lar < r)
+                lar = r;
+            largestDigit(n / 10);
+        }
+
+        return lar;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        int n = sc.nextInt();
+
+        CandidateCode obj = new CandidateCode();
+        int lar = obj.largestDigit(n);
+
+        System.out.println( lar);
+
+   }
+}
